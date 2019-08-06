@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>对话框 dialog</title>
+  <style>
+    .dialog {
+      width:300px;
+      background: #6a6;
+      padding: 10px;
+      border-radius: 6px;
+      margin-left: 10px;
+      position: relative;
+      color: #fff;
+    }
+    .dialog::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 10px solid #6a6;
+      border-right-color: #6a6;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color:transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialog">Hello, I'm dongdong</div>
+</body>
+</html>
